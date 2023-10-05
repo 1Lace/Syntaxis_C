@@ -6,23 +6,20 @@ namespace project{
 
         static void Main() {
 
-            byte[] nums = new byte[5];
-            nums[0] = 250;
-            nums[1] = 50;
-            nums[2] = 20;
-            nums[3] = 100;
-            nums[4] = 25;
+            short[] numbers = new short[10];
+            Random random = new Random();
+            short sum = 0;
 
-            //Console.WriteLine("El: " + nums[0]);
-            
+            for(byte i = 0; i < numbers.Length; i++){               
+                numbers[i] = Convert.ToInt16(random.Next(-5, 15));
+                Console.WriteLine("El: " + numbers[i]);
 
-            string[] words = new string[] {"John", "Bob", "Alex"};
+                sum += numbers[i];
 
-            words[1] = "Josh";
 
-            for(byte i = 0; i < words.Length; i++)
-                Console.WriteLine("El: " + words[i]);
-
+            }
+        
+        Console.WriteLine("Summa: " + sum);
         }
     }
 }
