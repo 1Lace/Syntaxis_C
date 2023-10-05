@@ -6,22 +6,18 @@ namespace project{
 
         static void Main() {
 
-            byte[] nums = new byte[5];
-            nums[0] = 250;
-            nums[1] = 50;
-            nums[2] = 20;
-            nums[3] = 100;
-            nums[4] = 25;
+            char[,] symbols = new char[2,3];
+            symbols[0, 0] = 'H';
+            Console.WriteLine(symbols[0, 0]);
 
-            //Console.WriteLine("El: " + nums[0]);
-            
+            int[,] nums = {
+                {4,6,7},
+                {5, 7, 3},
+                {3, 3, 2}
 
-            string[] words = new string[] {"John", "Bob", "Alex"};
+            };
 
-            words[1] = "Josh";
-
-            for(byte i = 0; i < words.Length; i++)
-                Console.WriteLine("El: " + words[i]);
+            nums[1, 2] = 56;
 
         }
     }
